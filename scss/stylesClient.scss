@@ -1,0 +1,13 @@
+@import '_partScss';
+$blue: rgb(10, 104, 212);
+$font-stack: Helvetica, sans-serif;
+$border: {
+  border-radius: 2p;
+}
+:root {
+  font-family: $font-stack;
+  font-size: 16px;
+  .textgrid {
+    display: grid;
+  }
+}
