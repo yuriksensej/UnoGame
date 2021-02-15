@@ -14,12 +14,103 @@ nav a {
   text-decoration: none;
 }
 
-:root {
+:root body {
   font-family: Helvetica, sans-serif;
   font-size: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
 }
 
-:root .textgrid {
+:root .one {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+}
+
+:root .two {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: login;
+}
+
+:root .three {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  grid-area: form;
+}
+
+:root .four {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: main;
+}
+
+:root .five {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: footer;
+}
+
+:root .textGrid {
+  min-height: 600px;
+  border: #333131 solid 1px;
+  border-collapse: collapse;
   display: -ms-grid;
   display: grid;
+      grid-template-areas: 'header header header login' 'form main main main' 'form main main main' 'form main main main' 'form main main main' 'footer footer footer footer';
+  background-color: #4727bd;
+  margin: 20px;
+}
+
+:root .textGrid .divGrid {
+  border: #333131 solid 1px;
+  border-collapse: collapse;
+  background-color: #99ffff;
+  padding: 10px;
+  margin: 2px;
+}
+
+:root .textGrid .divGrid .item {
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.form1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% auto 20%;
+      grid-template-columns: 15% auto 20%;
+  -ms-grid-rows: auto auto auto auto 30%;
+      grid-template-rows: auto auto auto auto 30%;
+}
+
+.form1 .inputFields {
+  margin: 5px;
+}
+
+.btn1 {
+  color: #691313;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+}
+
+.dateL {
+  -ms-grid-column: 1;
+  grid-column: 1/1;
+}
+
+.dateD {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
 }

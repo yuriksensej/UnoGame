@@ -5,16 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Client form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/stylesClient.css" />
   </head>
   <body>
-    <div class="main">Grid</div>
-    <div class="testGrid">
-      <div class="divGrid one"></div>
-      <div class="divGrid two"></div>
-      <div class="divGrid three"></div>
-      <div class="divGrid four"></div>
-      <div class="divGrid five"></div>
+    <div class="textGrid">
+      <div class="divGrid one">
+        <div class="item logo">UNO GAMES</div>
+        <div class="item gName">Давайте сыграем в УНО</div>
+      </div>
+      <div class="divGrid two">2</div>
+      <div class="divGrid three">
+        <form class="form1" method="post">
+          <label class="inputFields dateL" for="Date">Дата</label>
+          <input class="inputFields dateD" type="date" name="data" id="" />
+          <label class="inputFields" for="player1">Player 1</label>
+          <input class="inputFields" type="text" name="player1" />
+          <input class="inputFields" type="number" name="value1" id="" />
+          <label class="inputFields" for="player2">Player 2</label>
+          <input class="inputFields" type="text" name="player2" />
+          <input class="inputFields" type="number" name="value2" id="" />
+          <label class="inputFields" for="player3">Player 3</label>
+          <input class="inputFields" type="text" name="player3" />
+          <input class="inputFields" type="number" name="value3" id="" />
+          <input
+            class="inputFields btn-close-white btn1"
+            type="submit"
+            value="Отправить результат"
+          />
+        </form>
+      </div>
+      <div class="divGrid four table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Имя</th>
+              <th scope="col">Общий счет</th>
+              <th scope="col">1</th>
+              <th scope="col">2</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="divGrid five">Footer</div>
     </div>
   </body>
 </html>
