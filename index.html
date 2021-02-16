@@ -19,74 +19,82 @@
     <link rel="stylesheet" href="css/stylesClient.css" />
   </head>
   <body>
-    <div class="textGrid">
-      <div class="divGrid one">
-        <div class="item logo">UNO GAMES</div>
-        <div class="item gName">Давайте сыграем в УНО</div>
+    <div class="container">
+      <div class="row header align-items-md-center">
+        <div class="row col-4 login g-2 align-content-center">Login</div>
+        <div class="row col-8 title g-2">
+          <div class="col-sm item logo g-2">UNO GAMES</div>
+          <div class="col-sm item gName g-2">Давайте сыграем в УНО</div>
+        </div>
       </div>
-      <div class="divGrid two">2</div>
-      <div class="divGrid three">
-        <form class="form1" method="post">
-          <label class="inputFields dateL" for="Date">Дата</label>
-          <input class="inputFields dateD" type="date" name="data" id="" />
-          <label class="inputFields" for="player1">Player 1</label>
-          <input class="inputFields" type="text" name="player1" />
-          <input class="inputFields" type="number" name="value1" id="" />
-          <label class="inputFields" for="player2">Player 2</label>
-          <input class="inputFields" type="text" name="player2" />
-          <input class="inputFields" type="number" name="value2" id="" />
-          <label class="inputFields" for="player3">Player 3</label>
-          <input class="inputFields" type="text" name="player3" />
-          <input class="inputFields" type="number" name="value3" id="" />
-          <input
-            class="inputFields btn-close-white btn1"
-            type="submit"
-            value="Отправить результат"
-          />
-        </form>
+      <div class="row">
+        <div class="col-md-4">
+          <form class="form" method="post">
+            <div class="row">
+              <label class="col-4 inputFields dateL" for="Date">Дата</label>
+              <input class="col-8 inputFields dateD" type="date" name="data" />
+            </div>
+            <div class="row row-cols-3">
+              <label class="col inputFields" for="player1">Player 1</label>
+              <input class="col inputFields" type="text" name="player1" />
+              <input class="col inputFields" type="number" name="value1" />
+              <label class="col inputFields" for="player2">Player 2</label>
+              <input class="col inputFields" type="text" name="player2" />
+              <input class="col inputFields" type="number" name="value2" />
+              <label class="col inputFields" for="player3">Player 3</label>
+              <input class="col inputFields" type="text" name="player3" />
+              <input class="col inputFields" type="number" name="value3" />
+            </div>
+            <input
+              class="col inputFields btn-primary btn1"
+              type="submit"
+              value="Отправить результат"
+            />
+          </form>
+        </div>
+        <div class="col-md-8 table-responsive dataTable">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Имя</th>
+                <th scope="col">Общий счет</th>
+                <th scope="col">1</th>
+                <th scope="col">2</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+              </tr>
+            </thead>
+          </table>
+        </div>
       </div>
-      <div class="divGrid four table-responsive">
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Имя</th>
-              <th scope="col">Общий счет</th>
-              <th scope="col">1</th>
-              <th scope="col">2</th>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
-              <td>5</td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
-              <td>5</td>
-            </tr>
-          </thead>
-        </table>
-      </div>
-      <div class="divGrid five">Footer</div>
+      <div class="row five">Footer</div>
     </div>
   </body>
 </html>
