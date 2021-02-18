@@ -1,0 +1,10 @@
+// 'use strict';
+// const d = {};
+// console.log(d.c);
+// d.c = 33;
+const d = Object.freeze({ c: 33 });
+// Object.freeze({ c: 33 });
+console.log(d.c);
+d.c = 5;
+console.log(d.c);
+console.log(d);
